@@ -1,17 +1,15 @@
-language: python
+language:
+  - python
+
 python:
-  - "2.6"
-  - "2.7"
-  - "3.2"
-  - "3.3"
-  - "3.4"
-  - "3.5"
-  - "3.5-dev"
-  - "nightly"
-os:
-  - linux
-  - osx
-# command to install dependencies
-# install: "pip install -r requirements.txt"
-# command to run tests
-script: brittle.py
+  - 2.6
+  - 2.7
+  - 3.2
+  - 3.3
+  - 3.4
+
+script:
+  - python brittle.py
+
+notifications:
+  email: false
